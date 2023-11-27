@@ -1,5 +1,9 @@
 #!/bin/bash
+file_name='bak'
 if ! [ -d bak ]; then
-	mkdir bak
+	mkdir $file_name
+	echo "make a $file_name file"
 fi
-cp *.log bak
+cp *.log $file_name
+echo "create log files"
+
