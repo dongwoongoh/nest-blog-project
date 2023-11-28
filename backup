@@ -6,4 +6,3 @@ if ! [ -d bak ]; then
 fi
 cp *.log $file_name
 echo "create log files"
-
