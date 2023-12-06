@@ -4,5 +4,7 @@ if ! [ -d bak ]; then
 	mkdir $file_name
 	echo "make a $file_name file"
 fi
+touch f.log s.log t.log
 cp *.log $file_name
+rm -rf *.log
 echo "create log files"
