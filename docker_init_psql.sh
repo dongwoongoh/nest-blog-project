@@ -25,4 +25,5 @@ docker run -d \
     -e POSTGRES_USER=$DB_USER \
     -e POSTGRES_PASSWORD=$DB_PASS \
     -v $INIT_SQL:/docker-entrypoint-initdb.d/init.sql \
+    --name $DB_NAME \
     postgres:14.10-alpine3.18
