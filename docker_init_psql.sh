@@ -1,8 +1,13 @@
 #!/bin/zsh
 
-DB_NAME="mydb"
-DB_USER="mad"
-DB_PASS="12345"
+echo "Enter database name:"
+read DB_NAME
+
+echo "Enter database user name:"
+read DB_USER
+
+echo "Enter database user password:"
+read DB_PASS
 
 INIT_SQL="/tmp/init.sql"
 
